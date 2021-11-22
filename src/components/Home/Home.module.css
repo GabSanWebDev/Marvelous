@@ -1,0 +1,247 @@
+
+body {
+    font-family: 'Outfit', sans-serif;
+}
+
+.mainContainer{
+    width: 100%;
+    height: 100%;
+    background: url('../../Assets/Shiny\ Overlay.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 3rem;
+}
+
+
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto 0 auto;
+    width: 85%;
+    height: 100%;
+    gap: 1rem;
+    background-color: #323b4bb4;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+    padding: 1rem 0;
+
+
+}
+
+@media (max-width: 414px) {
+    .cardsContainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+
+    }
+
+
+}
+
+
+.card {
+    width: 80%;
+    height: 250px;
+    margin: 0 auto 2rem auto;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+
+}
+
+@media (max-width: 414px) {
+    .card {
+        width: 250px;
+    }
+}
+
+.card:hover {
+    transform: scale(1.1)
+}
+
+.cardImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    border-bottom-right-radius: 1rem;
+}
+
+.cardTitle {
+    color: white;
+    background-color: #222831c2;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transition: all 0.4s ease;
+}
+
+.cardTitle:hover {
+    background-color: #ec1d24;
+    height: 25%;
+}
+
+.marvelous {
+    width: 100%;
+    margin: 0;
+}
+
+.buttonsContainer {
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: 0;
+}
+
+@media (max-width: 414px) {
+    .buttonsContainer {
+        height: 15%;
+    }
+}
+
+
+.buttonDelete {
+    padding: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #222831;
+    border: none;
+    color: #eeeeee;
+    transition: all 0.2s ease-in-out;
+}
+
+.buttonDelete:hover {
+    background-color: #363d47;
+    cursor: pointer;
+    color: rgb(190, 10, 10);
+}
+
+.buttonFav {
+    padding: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #222831;
+    border: none;
+    color: #eeeeee;
+    transition: all 0.2s ease-in-out;
+    border-bottom-right-radius: 1rem;
+}
+
+.buttonFav:hover {
+    background-color: #363d47;
+    cursor: pointer;
+    color: rgb(3, 153, 3);
+}
+
+.searchContainer {
+    background: #222831;
+    margin-top: -4px;
+    height: 75px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    padding: 0 5rem;
+
+}
+@media (max-width: 414px) {
+    .searchContainer {
+        height: 200px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+.searchDiv {
+    margin: 0 auto;
+    height: 50%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reloadBtn {
+    margin: 0 auto;
+    width: 60%;
+    height: 50%;
+}
+
+.input {
+    height: 100%;
+    border-top-left-radius: 10px;
+    border: none;
+    color: #eeeeee;
+    background-color: #3a4049;
+}
+
+.input::outline {
+    border: none;
+    decoration: none;
+}
+
+.input::placeholder {
+padding: 0 .5rem;
+color: #eeeeee;
+}
+
+.inputBtn {
+    height: 100%;
+    width: 30%;
+    border-bottom-right-radius: 10px;
+    border: none;
+    color: #eeeeee;
+    background-color: #313944;
+    transition: all 0.3s ease-in-out;
+}
+.inputBtn:hover{
+    background-color: #ec1d24;
+    cursor: pointer;
+}
+
+.allBtn{
+    border: none;
+    width: 100%;
+    height: 100%;
+    background-color: #434b57;
+    color: #eeeeee;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.allBtn:hover{
+    background-color: #ec1d24;
+    cursor: pointer;
+}
+
+.paginate{
+    margin: 1rem auto;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.paginateBtn{
+    background: #222831;
+    width: 2rem;
+    height: 2rem;
+    margin: 0 .5rem;
+    color: #ec1d24;
+    border: none;
+    font-size: 1.8rem;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.paginateBtn:hover{
+    cursor: pointer;
+    background-color: #353c46;
+}
